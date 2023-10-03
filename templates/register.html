@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+</head>
+<body bgcolor="orange">
+
+
+<center>
+    <h1>{{msg}}</h1>
+    <h1><b><i>This is the Registration form</i></b></h1>
+<form action="./reg/" method="post">
+    {% csrf_token %}
+    FirstName: <input type="text" name="f1" placeholder="Enter your surname">
+    LastName: <input type="text" name="f2" placeholder="Enter your name"><br><br>
+    FullName: <input type="text" name="f3" placeholder=" Fullname"><br><br>
+    Address: <input type="text" name="f4" placeholder="Enter your Address"><br><br>
+    EmailId: <input type="email" name="f5" placeholder="emailId@gmail.com"><br><br>
+    password: <input type="password" name="f6" placeholder="Enter your strong password"><br><br>
+    Re-(password): <input type="password" name="f7" placeholder="Enter re-enter password"><br><br>
+    Mobile number: <input type="number" name="f8" placeholder="Enter your mobile number"><br><br>
+        <input type="submit" value="Register">
+    </form>
+</center>
+
+
+</body>
+</html>
